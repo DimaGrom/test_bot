@@ -43,6 +43,10 @@ bot.onText(/\/s2/, msg => {
 	})
 })
 
+bot.onText(/\/w/, msg => {
+	bot.sendMessage(msg.chat.id, `Привет, ${msg.chat.id}`)
+})
+
 /////////////////////////////////////////////////////////////////
 
 // Урок 22 Отправка Файла
@@ -320,4 +324,4 @@ bot.onText(/\/s2/, msg => {
 
 
 // отлавливаем ошибки
-bot.on("polling_error", err => console.log(err))
+// bot.on("polling_error", err => console.log(err))
